@@ -1,1 +1,1 @@
-# it-amethyst
+Brittany Bisbee
