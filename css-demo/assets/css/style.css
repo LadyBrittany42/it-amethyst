@@ -1,3 +1,304 @@
+/* -----color palette-----
+Primary- 9E7227, 
+Accent- EB9DA6, 
+Heading- 91EBD7, 
+Hover- 9E7C52, 
+Hyerlink- EBBD86 */
+
+
+
+/* ---------------Box Sizing----------------- */
+
+html {
+  box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+/*---utility styles-----*/
+.container{
+    width:80vw;
+    margin:40px auto;
+    padding-left:8px;
+    max-width:900px;
+    border-top:1px solid #EB9DA6;
+    border-left:1px solid #EB9DA6;
+}
+
+.img-right{
+    float:right;
+    border:1px solid #000000;
+    padding:20px;
+    margin:10px 20px 0;
+}
+
+.img-left{
+    float:left;
+    border:1px solid #000000;
+    padding:20px;
+    margin:10px 20px 0;
+}
+
+.img-center{
+    display:block;
+    border:1px solid #000000;
+    padding:20px;
+    margin:20px auto;
+}
+/*-----responsive images--------*/
+
+img{
+    max-width:100%;
+    height:auto;
+}
+/*-------global styles--------*/
+
 body{
-    background-color:purple;
+   font-family: 'Josefin Sans', sans-serif;
+   line-height:1.5;
+   margin:0;
+}
+
+header.primary{
+    background-color:#9E7227;
+    text-align:center;
+    text-shadow:3px 3px #000000;
+    padding:20px 40px 40px 20px;
+}
+
+header.primary h1{
+    font-size:3rem;
+    
+}
+
+header.primary h1 a{
+    color:#9E7C52;
+    text-decoration:none;
+}
+
+header.primary h2{
+    color:#9E7C52;
+    font-size:2em;
+    margin:20px auto 40px;
+}
+
+header.primary nav{
+    width:80vw;
+    margin:20px auto;
+    text-shadow:0px 0px;
+}
+
+header.primary nav ul{
+    padding:0;
+    display:flex;
+    flex-direction:row;
+    justify-content:space-evenly;
+}
+
+header.primary nav ul a:link, header.primary nav ul a:visited{
+    color:#EBBD86;
+}
+
+header.primary nav ul a:active, header.primary nav ul a:hover{
+    color:#9E7C52;
+}
+
+header.primary nav ul li{
+    list-style-type:none;
+    background-color:#000000;
+    padding:8px 16px;
+    border-radius:20px 5px;
+}
+
+#intro h2{
+    color:#9E7227;
+    text-shadow:2px 2px #000000;
+    
+}
+
+#content{
+    display:flex;
+    flex-direction:row;
+    justify-content:space-evenly;
+}
+
+article.post{
+    width:20;
+    padding:10px;
+    border-radius:20px 5px;
+}
+
+article.post:hover{
+    box-shadow:0 8px 16px rgba(0,0,0,.4) inset;
+    transition:.5s;
+}
+
+article.post figure{
+    margin:0;
+}
+
+article.post time, article.post figcaption, article.post footer{
+    font-size:.8em;
+    
+}
+
+article.post img{
+    border-radius:20px 5px;
+}
+
+article.post a:link, a:visited{
+    color:#EBBD86;
+}
+
+article.post a:active, a:hover{
+    color:#9E7C52;
+}
+
+article.post h2{
+    text-shadow:2px 2px #000000;
+}
+
+/*------attribute selector-----*/
+aside[role="complementary"]{
+    background-color:#9E7227;
+    padding:2.5em;
+}
+
+aside.container{
+    display:flex;
+    flex-direction:column;
+    justify-content:space-between;
+}
+
+aside article.widget{
+    padding:10px;
+}
+
+aside article.widget a:link, a:visted{
+    color:#EBBD86;
+}
+
+aside article.widget a:active, a:hover{
+    color:#9E7C52
+}
+
+aside article.widget a{
+    display:block;
+    margin-top:20px;
+    text-align:center;
+    letter-spacing:5px;
+}
+
+aside article.widget footer{
+    display:none;
+}
+
+footer#colophon{
+    background-color:#9E7227;
+}
+
+#colophon h6{
+    margin:0;
+    text-align:center;
+    text-transform:uppercase;
+}
+
+#additional-elements h2, h3{
+    color:#9E7227;
+    text-shadow:2px 2px #000000;
+}
+
+table{
+    width:50%;
+    border:1px solid #000000;
+    border-collapse:collapse;
+    margin:30px;
+}
+
+caption{
+    font-weight:bold;
+    font-size:1.5rem;
+    margin:5px;
+}
+
+tr:nth-child(even){
+    background:#91EBD7;
+}
+
+tr:hover{
+    background:#EB9DA6;
+}
+
+th{
+   background:#EB9DA6; 
+}
+
+#additional-elements ol{
+    list-style-type:upper-roman;
+}
+
+#additional-elements ul{
+    position:relative;
+    list-style:none;
+    margin-left:0;
+    padding-left:1.2em;
+}
+
+#additional-elements ul li:before{
+    content:"*";
+    position:absolute;
+    left:0;
+}
+
+#additional-elements ul ul{
+    color:#EB9DA6;
+}
+
+td{
+    border:1px solid #000000;
+    padding:3px;
+}
+
+#additional-elements dt{
+    font-weight:bold;
+    font-size:1.2em;
+    margin-top:1.4em;
+}
+
+#additional-elements dd{
+    margin:0;
+}
+
+/*
+dd + dt{
+    margin-top:1.4em;
+}*/
+
+/*
+h2 + p{
+    color:red;
+}*/
+
+#additional-elements blockquote{
+    background:rgba(0,0,0,.15);
+    padding:40px 60px;
+    border:3px;
+    border-radius:20px 5px;
+    font-size:1.2em;
+}
+
+#additional-elements cite{
+    display:block;
+    text-align:right;
+    font-size:.6em;
+    font-weight:bold;
+    margin:1.5rem;
+}
+
+.widget h2{
+    color:#9E7227;
+    text-shadow:3px 3px #000000;
 }

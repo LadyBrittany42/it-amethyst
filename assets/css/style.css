@@ -1,3 +1,38 @@
-body{
-    background-color:cornflowerblue;
+/*
+
+Primary - color: #55878E
+Accent - color: #F2D329
+Heading - color: #F0F3ED
+Hyperlink - color: #F27604 
+Hover - color: #D7AB86
+
+*/
+
+
+/* ---------------Box Sizing----------------- */
+
+html {
+  box-sizing: border-box;
 }
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+/* ---------------Global Styles----------------- */
+
+body{
+     font-family: 'Roboto', sans-serif;
+     line-height: 1.5;
+     margin:0;
+}
+
+header.primary{
+  background-color:#3b638b;
+  text-align:center;
+  color:#ffffff;
+  text-shadow: 2px 2px #000000;
+}
+
+
