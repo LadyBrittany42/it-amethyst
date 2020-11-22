@@ -182,7 +182,7 @@ aside article.widget a:link, a:visted{
 }
 
 aside article.widget a:active, a:hover{
-    color:#9E7C52
+    color:#9E7C52;
 }
 
 aside article.widget a{
@@ -302,3 +302,22 @@ h2 + p{
     color:#9E7227;
     text-shadow:3px 3px #000000;
 }
+
+#additional-elements a:link, a:visited{
+    color:#EBBD86;
+}
+
+#additional-elements a:active, a:hover{
+    color:#9E7C52;
+}
+
+
+
+
+
+
+
+
+
+
+
