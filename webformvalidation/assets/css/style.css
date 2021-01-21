@@ -1,0 +1,17 @@
+/* ---------------Box Sizing----------------- */
+
+html {
+  box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+.formlabel {
+	display: inline-block;
+	width: 150px;
+	padding: 10px 0 5px 75px;
+	font-weight: bold;
+}
