@@ -15,3 +15,10 @@ html {
 	padding: 10px 0 5px 75px;
 	font-weight: bold;
 }
+
+
+
+.error {
+   color: red;
+   padding-left: 5px;
+}
