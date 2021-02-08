@@ -1,6 +1,10 @@
-$(document).ready(function(){
-    
+$("#basicform").validate({
+
+});     
+
+/*    
 $(#basicform).validate({
+
     rules: {
         FirstName: {
             required: true
@@ -43,6 +47,6 @@ Medications: {
     required: true
 }
 }
-    
-    );
+   
 });
+ */
