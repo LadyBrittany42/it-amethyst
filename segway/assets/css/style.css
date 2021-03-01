@@ -1,0 +1,65 @@
+/* ---------------Box Sizing----------------- */
+
+html {
+  box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+/* ----- Utility Styles ---- */
+
+.container{
+  width:100vw;
+  margin:40px auto;
+  max-width:1500px;
+}
+
+/*------global styles------*/
+
+header.primary, .container h2, .container h3{
+  font-family: 'Caveat', cursive;
+  text-align:center;
+  color:#03588C;
+  padding:20px 0 20px 0;
+}
+
+.container h4{
+  font-family: 'Roboto', sans-serif;
+  color:#000000;
+  padding:20px 0 20px 0;
+}
+
+header.primary img{
+  margin:0 0 10px 120px;
+}
+
+header.primary nav ul{
+    padding:50px;
+    display:flex;
+    flex-direction:row;
+    justify-content:space-evenly;
+}
+
+header.primary nav ul a:link, header.primary nav ul a:visited{
+    color:#03588C;
+}
+
+header.primary nav ul a:active, header.primary nav ul a:hover{
+    color:#A4A5A6;
+}
+
+header.primary nav ul li{
+    list-style-type:none;
+    background-color:#000000;
+    padding:8px 16px;
+    border-radius:20px;
+}
+
+#colophon h6{
+    margin:0;
+    text-align:center;
+    text-transform:uppercase;
+}
