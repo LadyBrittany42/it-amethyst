@@ -20,11 +20,15 @@ html {
 /*------global styles------*/
 
 header.primary, .container h2, .container h3{
-  font-family: 'Caveat', cursive;
+  font-family: 'Open Sans Condensed', sans-serif;
   text-align:center;
   color:#03588C;
   padding:20px 0 20px 0;
 }
+
+body{
+  font-family: 'Open Sans', sans-serif;
+  }
 
 .container h4{
   font-family: 'Roboto', sans-serif;
@@ -33,7 +37,7 @@ header.primary, .container h2, .container h3{
 }
 
 header.primary img{
-  margin:0 0 10px 120px;
+  margin:0 0 0 40px;
 }
 
 header.primary nav ul{
@@ -54,12 +58,65 @@ header.primary nav ul a:active, header.primary nav ul a:hover{
 header.primary nav ul li{
     list-style-type:none;
     background-color:#000000;
-    padding:8px 16px;
-    border-radius:20px;
+    padding:10px 16px;
+    border-radius:10px 10px 10px 10px;
+}
+
+#content, #articles{
+  margin:10px;
+  padding:20px;
+}
+
+.img1{
+  background-color: #212225;
+  width: 1200px;
+	margin-top: 40px;
+	margin-right: auto;
+	margin-left: auto;
+	border: 1px solid #999;
+	height: 700px;
+	border-radius: 6px;
+}
+
+.img2{
+  background-color: #212225;
+  width: 575px;
+	margin-top: 40px;
+	margin-right: auto;
+	margin-left: auto;
+	border: 1px solid #999;
+	height: 800px;
+	border-radius: 6px;
+}
+
+.img3{
+  background-color: #212225;
+  width: 575px;
+	margin-top: 40px;
+	margin-right: auto;
+	margin-left: auto;
+	border: 1px solid #999;
+	height: 600px;
+	border-radius: 6px;
 }
 
 #colophon h6{
     margin:0;
     text-align:center;
     text-transform:uppercase;
+}
+
+.gallery {
+	background-color: #212225;
+	width: 730px;
+	margin-top: 40px;
+	margin-right: auto;
+	margin-left: auto;
+	border: 1px solid #999;
+	height: 530px;
+	overflow: hidden; /*Avoids showing all of the images momentarily while JS loads */
+	border-radius: 6px;
+}
+.gallery img {
+	margin: 15px;
 }
