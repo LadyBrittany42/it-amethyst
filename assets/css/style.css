@@ -1,38 +1,47 @@
-/*
+/*---box sizing---*/
 
-Primary - color: #55878E
-Accent - color: #F2D329
-Heading - color: #F0F3ED
-Hyperlink - color: #F27604 
-Hover - color: #D7AB86
-
-*/
-
-
-/* ---------------Box Sizing----------------- */
-
-html {
-  box-sizing: border-box;
-}
+html {box sizing: border-box;}
 *,
 *:before,
-*:after {
-  box-sizing: inherit;
+*:after {box-sizing: inherit;}
+
+/*---utility styles--*/
+
+.container{
+    width:80vw; 
+    margin:auto;
+    max-width:900px;
 }
 
-/* ---------------Global Styles----------------- */
-
+/*--global styles---*/
 body{
-     font-family: 'Roboto', sans-serif;
-     line-height: 1.5;
-     margin:0;
+  font-family: 'Open Sans Condensed', sans-serif;
 }
 
 header.primary{
-  background-color:#3b638b;
+  background-color: #b76e79;
+  color:#000000;
   text-align:center;
-  color:#ffffff;
-  text-shadow: 2px 2px #000000;
 }
 
-
+/*header.primary nav ul{
+  display:flex;
+  flex-direction:column;
+  justify-content:space-around;
+  padding:40px 0 40px 0;
+  max-width:900px;
+  margin:20px 0 20px 0;
+  
+  /*
+  header.primary nav a:link, header.primary nav a:visited{
+  color:#000000;
+  text-decoration:none;
+  }*/
+  
+#colophon{
+  padding:20px;
+  margin:0;
+  color:#ffffff;
+  text-align:center;
+  font-size:.9rem;
+  text-transform:uppercase;}
