@@ -2,51 +2,66 @@ $( "#CircleForm" ).validate({
 
 });
 
-$( "#TriangleForm" ).validate({
-
-        });
+$( "#CircleForm" ).validate({
+});
         
-        function displayHypotenuse() {
+        function calculate() { // floating point value of leg1
+                 
             // if the form is valid, then make the calculations
-            if ($("#TriangleForm").valid()) {
+            if ($("#CircleForm").valid()) {
                 
-                 document.getElementById("hypotenuse").innerHTML = "";
+                 document.getElementById("diameter").innerHTML = "";
 
-                 var leg1; // string representation of the leg1
-                 var leg1fp; // floating point value of leg1
-                 var leg2; // string representation of the leg1
-                 var leg2fp; // floating point value of leg1
-                 var hypotenuse;  // floating point hypotenuse
-                 var result; // displayable result
+                 var radius; // string representation of the leg1
+                 var radiusfp;
+                 var diameter;  // floating point hypotenuse
+                var circumference;
+                var area;
 
                  // read in the legs as a string
-                 leg1 = document.getElementById("leg1").value;
-                 leg2 = document.getElementById("leg2").value;
+                 radius = document.getElementById("radius").value;
+                
 
                  // Convert numbers from strings to Floating Point
-                 leg1fp = parseFloat( leg1 ); 
-                 leg2fp = parseFloat( leg2 ); 
+                 radiusfp = parseFloat( radius ); 
+                 
 
                  // calculate the hypotenuse
-                 hypotenuse = calcHypotenuse(leg1fp, leg2fp);
+                 diameter = calcDiameter(radiusfp);
+                 circumference= calcCircumference(radiusfp);
+                 area = calcArea(radiusfp);
 
                  // display the hypotenuse
-                 document.getElementById("hypotenuse").innerHTML = hypotenuse.toString();
+                 document.getElementById("diameter").innerHTML = diameter.toString();
+                 document.getElementById("circumference").innerHTML = circumference.toString();
+                 document.getElementById("area").innerHTML = area.toString();
             }
         }
 
-          function calcHypotenuse (leg1value, leg2value)
+          function calcDiameter (radiusvalue)
           // returns hypotenuse of a right triangle
           // square root of leg1 squared plus leg2 squared
           {
-              return Math.sqrt((leg1value*leg1value) + (leg2value*leg2value));
+              return 2 * radiusvalue
           }
-          
+          function calcCircumference (radiusvalue)
+          // returns hypotenuse of a right triangle
+          // square root of leg1 squared plus leg2 squared
+          {
+              return 2 * radiusvalue * Math.PI
+          }
+          function calcArea (radiusvalue)
+          // returns hypotenuse of a right triangle
+          // square root of leg1 squared plus leg2 squared
+          {
+              return radiusvalue * radiusvalue * Math.PI
+          }
           function clearForm()
         {
-            document.getElementById("leg1").value = "";
-            document.getElementById("leg1error").innerHTML = "";
-            document.getElementById("leg2").value = "";
-            document.getElementById("leg2error").innerHTML = "";
-            document.getElementById("hypotenuse").innerHTML = "";
+            document.getElementById("radius").value = "";
+            document.getElementById("radiuserror").innerHTML = "";
+            
+            document.getElementById("diameter").innerHTML = "";
+            document.getElementById("circumference").innerHTML = "";
+            document.getElementById("area").innerHTML = "";
         }
