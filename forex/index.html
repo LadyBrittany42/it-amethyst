@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <meta name="description" content="Polygon - Company Details">
+    <meta name="keywords" content="HTML, CSS,JavaScript, AJAX, jQuery">
+    <meta name="author" content="Bruce Bauer">
+    <title>Polygon - Company Details</title>
+    <link href="assets/css/style.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+    <form id="myform" onsubmit="return false">
+        <div class="formcontainer">
+            <h2>Currency Value History</h2>
+            <label for="basecurrency" class="formlabel" >Base Currency: </label>
+            <!--<label for="DisplayStock" class="formlabel" ></label>-->
+            <input type="text" id="basecurrency" name="basecurrency" size="6" maxlength="6"
+                    data-rule-required="true"  data-msg-required="Value is Required">
+            <label class="error" for="basecurrency" id="basecurrencyerror"></label><br>
+            
+            <label for="convertcurrency" class="formlabel" >Convert to Currency: </label>
+            <!--<label for="DisplayStock" class="formlabel" ></label>-->
+            <input type="text" id="convertcurrency" name="convertcurrency" size="6" maxlength="6"
+                    data-rule-required="true"  data-msg-required="Value is Required">
+            <label class="error" for="convertcurrency" id="convertcurrencyerror"></label><br>
+            
+            <label class="fromdate">From Date:</label>
+            <input type="date" name="fromdate" id="fromdate" 
+                data-rule-required="true" data-msg-required="From Date is Required">
+            <label id="FromDateError" for="FromDate" class="error"></label>
+            
+            <label class="todate">To Date:</label>
+            <input type="date" name="todate" id="todate" 
+			     data-rule-required="true" data-msg-required="To Date is Required">
+		    <label id="ToDateError" for="ToDate" class="error"></label>
+            <br><br>
+            
+            <input type="button" value="ShowResults" id="ShowResults" name="ShowResults" onclick="ShowData();">
+            <input type="button" value="Clear" id="Clear" name="Clear" onclick="ClearForm();">
+            <hr>
+            <br>
+            
+            <hr>
+
+            <div class="clearfix">
+                <div class="img-container">
+                    <span id="CurrencyValueTable"></span>
+                </div>
+            </div>
+            <hr>
+            
+            <div class="clearfix">
+                <div class="img-container">
+                    <canvas id="chartjs-0" width="400" height="400"></canvas>
+                </div>
+                
+            </div>
+        </div>
+</form>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/jquery.validation/1.16.0/jquery.validate.min.js"></script>
+<script src="https://cdn.jsdelivr.net/jquery.validation/1.16.0/additional-methods.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.min.js"></script>
+<script src="assets/js/script.js"></script>
+
+</body>
+</html>
