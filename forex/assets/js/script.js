@@ -24,7 +24,7 @@ function ShowData() {
 /* save this url because it works
        var myURL = "https://api.polygon.io/v2/aggs/ticker/C:EURUSD/range/1/day/2020-10-14/2020-10-18?unadjusted=true&sort=asc&limit=120&apiKey=0X4A8VH9tvEnbyj2ALivpUcHpQW1D5FR"
 */
-       var myURL = "https://api.polygon.io/v2/aggs/ticker/C:" + BaseCurrency + ConvertCurrency + "/range/1/day" + fromdate + "/" + todate + "?unadjusted=true&sort=asc&limit=120&apiKey=0X4A8VH9tvEnbyj2ALivpUcHpQW1D5FR"
+       var myURL = "https://api.polygon.io/v2/aggs/ticker/C:" + BaseCurrency + ConvertCurrency + "/range/1/day/" + FromDate + "/" + ToDate + "?unadjusted=true&sort=asc&limit=120&apiKey=0X4A8VH9tvEnbyj2ALivpUcHpQW1D5FR"
 
         /* AJAX Method (POST or GET) */
         var myMethod = "GET";
@@ -77,8 +77,8 @@ function ShowData() {
                 var myChart = new Chart(ctx0, {
                     "type":"line",
                     "data": {
-                        "labels": CurrencyValue,
-                        "datasets":[{"label":"Stock Close",
+                        "labels": currencydate,
+                        "datasets":[{"label":"Currency Close",
                         "data": currencyvalue,
                         "fill":false,
                         "borderColor":"rgb(75, 192, 192)",
